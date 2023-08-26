@@ -7,7 +7,7 @@ echo "<article class='article'>
                 <p>Encuentre la suma de los primeros números impares indicados por el usuario de la serie de fibonacci.</p>
                 <div>
                     <form action='./prueba1.php' method='post' name='form1'>
-                    <p id='p1'>Ingrese la cantidad de numeros impares que desea sumar: </label><input type='text' name='cantidad' id='cantidad' size='5'></p>
+                    <p id='p1'>Ingrese la cantidad de números impares que desea sumar: </label><input type='text' name='cantidad' id='cantidad' size='5'></p>
                     <input type='submit' id='btn1' value=' SUMAR '>
                     </form>
                 </div>
@@ -39,7 +39,7 @@ while($flag==true && isset($_POST['cantidad']))
     $num3 = $num1 + $num2;
     if($num1==0)
     {
-        echo "<spam style='font-size:20px'>Los elementos de la serie de Fibonacci son: </spam><br/>";
+        echo "Los elementos de la serie de Fibonacci son: <br/>";
     }
 
     if($num2%2!=0)
@@ -48,19 +48,15 @@ while($flag==true && isset($_POST['cantidad']))
         $suma +=  $num2;
         if($contador<$cantidad)
         {
-            echo "<spam style='font-size:20px'>".$num2."</spam>, ";
-            if($contador%20==0)
-            {
-                echo "<br/>";
-            }
-            
+            echo $num2.", ";
+                        
         }
         else
         {
-            echo "<spam style='font-size:20px'>".$num2."</spam>";
+            echo $num2;
             $flag=false;
-            echo "<br/><br/><i><strong>OBSERVACIÓN: </strong>Los números de color rojo son los pares y el resto los impares:</i><br/><br/>";
-            echo "<spam style='color:blue; font-size:20px'>La suma de los  numeros impares es: ".$suma."</spam>";
+            echo "<br/><br/><i><strong>OBSERVACIÓN: </strong>Los números de color rojo son los pares y el resto, los impares, son los que se sumarán.</i><br/><br/>";
+            echo "<spam style='color:blue;'>La suma de los  numeros impares es: ".$suma."</spam>";
 
         }
         
@@ -70,18 +66,15 @@ while($flag==true && isset($_POST['cantidad']))
     {   
         if($contador<$cantidad)
         {
-            echo "<spam style='color:RED; font-size:20px'>".$num2."</spam>, ";
-            if($contador%20==0)
-            {
-                echo "<br/>";
-            }
+            echo "<spam style='color:RED'>".$num2."</spam>, ";
+            
         }
         else
         {
-            echo "<spam style='color:RED; font-size:20px'>".$num2."</spam>";
+            echo "<spam style='color:RED'>".$num2."</spam>";
             $flag=false;
-            echo "<br/><br/><i><strong>OBSERVACIÓN: </strong>Los números de color rojo son los pares y el resto los impares:</i><br/><br/>";
-            echo "<spam style='color:blue; font-size:20px'>La suma de los  numeros impares es: ".$suma."</spam>";
+            echo "<br/><br/><i><strong>OBSERVACIÓN: </strong>Los números de color rojo son los pares y el resto, los impares, son los que se sumarán.</i><br/><br/>";
+            echo "<spam style='color:blue'>La suma de los  numeros impares es: ".$suma."</spam>";
         }
         
     }

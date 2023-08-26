@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 15px;
 }
 
 body{ 
@@ -21,6 +22,7 @@ header{
      line-height: 50px;
      color:rgb(0, 209, 178);
      font-weight: bold;
+     font-size: 30px;
 }
 
 nav{
@@ -50,7 +52,7 @@ nav ul li > a {
 #content{
     float: left;
     background-color: grey lightgrey;
-    min-height: 350px;
+    min-height: 250px;
     padding: 10px; 
 }
 
@@ -64,21 +66,29 @@ nav ul li > a {
 
 
 .article h2{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
  .article p {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 15px;
  }
 
- #p1 {
+
+form input{
+    
+    padding: 2px;
+    text-align: center;
+}
+
+
+ #p1, #p2, #p3 {
     display: inline-block;
  }
 
 
- #btn1{
+ #btn1, #btn2, #btn3{
     cursor: pointer;
     display: inline-block;
     padding: 5px;
@@ -88,11 +98,13 @@ nav ul li > a {
     color: white;
  }
 
+
+
 footer{
-    height: 50px;
+    height: 40px;
     text-align: center;
     background-color: rgb(0, 209, 178);
     color:white;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 15px;
 }
