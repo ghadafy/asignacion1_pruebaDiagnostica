@@ -56,7 +56,7 @@ while($flag==true && isset($_POST['cantidad']))
             echo $num2;
             $flag=false;
             echo "<br/><br/><i><strong>OBSERVACIÓN: </strong>Los números de color rojo son los pares y el resto, los impares, son los que se sumarán.</i><br/><br/>";
-            echo "<spam style='color:blue;'>La suma de los  numeros impares es: ".$suma."</spam>";
+            echo "<spam style='color:blue;'>La suma de los ".$cantidad." primeros numeros impares de la serie de Fibonacci es: ".$suma."</spam>";
 
         }
         
